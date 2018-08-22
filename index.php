@@ -1,20 +1,17 @@
 <?php include "includes/header.php"?>
 <!--End Header Include here! -->
+<p>Develop and place an updated version of the "multiple.php" contact form (located in your web120 includes folder) on the main page. Adjsut its fields to ask the basics questions you'd always need to ask any client to help determine if you can help them with their website needs.</p>
+<p>add multiple.php client form here</p>
 
-<!-- MAKE SURE YOU GET YOUR (3) IMAGES SAVED INTO YOUR IMAGES FOLDER -->
-    <img src="images/giraffes_3.jpeg" class="phone" alt="" /> 
 
-<P>My name is Hailu</P>
-<p>I am a student at Seattle Central College studying Web Developemt</p>
-<p>This page is under construction. So, please be patient to get the full web page soon.</p>
-<p>Thank you for your patience!</p>
 </section>
 <!-- END LEFT COL -->
 
 <!-- START RIGHT COL -->
 <aside>
- <h3>My School</h3>
- <img src="images/scc.png" class="tablet" alt="" />
+<p>Provide atleast 3 (linked) resources that help you and/or youe web team with steps found in very basic website design and development cycle. For example, client surveys, wireframing tools, etc.</p>
+
+<p>Here's a website to help get you started, hettps://business.tutsplus.com/articles/...</p>
 </aside>
 <!-- END RIGHT COL -->
 <?php include "includes/footer.php"?> 

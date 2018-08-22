@@ -1,0 +1,192 @@
+/* My WEB120 Portal Website Styles */
+
+html {
+    background-color:#ccc;
+}
+div.wrapper {
+    background-color:#fff;
+    overflow:auto;
+}
+ 
+/* Embed Responsively Rules! */
+div.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height:0px;
+    overflow: hidden;
+    margin: auto;
+    max-width: 98%;
+    
+} 
+
+div.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*HIDE AGENDA VIEW CALENDE */
+div.embed-container.agenda-view {
+    display:none;
+}
+/* EMBED RESPOSIVELY STYLES */ 
+.embed-container {
+        position: relative; 
+        padding-bottom: 56.25%; 
+        height: 0; 
+        overflow: hidden; 
+        max-width: 100%; 
+}
+
+.embed-container iframe { 
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%;
+}
+footer {
+	clear:both;
+    }
+/* END - EMBED RESPONSIVELY STYLES */
+
+/* START RESPONSIVE STYLES */
+
+/* DESKTOP */
+@media all and (min-width:1400px) {
+	
+    div.wrapper {
+		width:65%;
+		margin:auto;
+	}
+
+    section {
+		width: 65%;
+		float:left;
+	}
+   
+    aside {	
+		width:34%;
+		float:right;
+	}
+	
+    img.desktop {
+      	float:left;
+       	width:75%;
+   	 }
+    
+    
+    img.tablet, img.phone {
+       		 display:none;
+    	}  
+    
+    /* Change background color of navigation on selected page */
+    ul.topnav li a.selected {
+        		background-color: #ccc;
+        	color:#000;
+   	 }
+}
+
+/* TABLET */
+@media all and (min-width:737px) and (max-width:1399px) {
+	
+	section {
+		width:60%;
+		float:left;
+	}
+	
+	aside {	
+		width:39%;
+		float:right;
+	}
+	
+            img.tablet {
+       		width:75%;
+           }
+    
+           img.desktop {
+        		width:75%;
+           } 
+     img.phone {
+        		width:50%;
+           } 
+    
+    /* Change background color of navigation on selected page */
+           ul.topnav li a.selected {
+        		background-color: #ccc;
+        		color:#000;   
+          }
+  }
+/* CALENDAR RULES FOR PHONE */
+
+@media all and (max-width:860px) {
+    /*show Agenda view calendar */
+    div.embed-container.agenda-view {
+        display:block;
+    }
+    /*Hide Month view calendar */
+    div.embed-container.month-view {
+        display:none;
+    }
+}
+
+
+
+
+/* PHONE */
+@media all and (max-width:736px) {
+    
+    img.phone {
+       		width:50%;
+    }
+    
+    img.tablet {
+        		width:50%;
+    }  
+
+}
+
+
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #555;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+   }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+
+@media screen and (max-width:680px) {
+ 
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+
+}
+h3 {
+    text-align-last: center;
+}
